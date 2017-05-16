@@ -10,10 +10,13 @@ import UIKit
 
 class BugsViewController: UIViewController {
     
+    @IBOutlet weak var tableView: UITableView!
     var bugSections = [BugSection]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        navigationItem.rightBarButtonItem = editButtonItem
         
         setupBugs()
         
@@ -42,6 +45,23 @@ class BugsViewController: UIViewController {
 }
 
 extension BugsViewController: UITableViewDataSource {
+    
+    override func setEditing(_ editing: Bool, animated: Bool) {
+        super.setEditing(editing, animated: animated)
+        if editing {
+           tableView.setEditing(true, animated: true)
+        } else {
+            tableView.setEditing(false, animated: true)
+        }
+    }
+    
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete {
+            let bugSection = bugSections[indexPath.section]
+            bugSection.bugs.remove(at: indexPath.row)
+            tableView.deleteRows(at: [indexPath], with: .automatic)
+        }
+    }
     
     func numberOfSections(in tableView: UITableView) -> Int {
         return bugSections.count
