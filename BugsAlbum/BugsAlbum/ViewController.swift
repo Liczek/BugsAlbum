@@ -9,17 +9,43 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    var bugs = [ScaryBug]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        let scaryBugs = ScaryBug.bugs()
+        bugs = scaryBugs
+        
+        title = "Bugs Album"
+        
+        automaticallyAdjustsScrollViewInsets = false
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        
     }
 
 
 }
 
+extension ViewController: UITableViewDataSource {
+    
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return bugs.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "BugsCell", for: indexPath)
+        let bug = bugs[indexPath.row]
+        cell.textLabel?.text = bug.name
+        if let bugImage = bug.image {
+            cell.imageView?.image = bugImage
+        }
+        
+        return cell
+    }
+}
