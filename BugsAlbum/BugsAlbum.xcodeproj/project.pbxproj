@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		C8567EC61ECB547E003EA7C7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8567EC51ECB547E003EA7C7 /* AppDelegate.swift */; };
-		C8567EC81ECB547E003EA7C7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8567EC71ECB547E003EA7C7 /* ViewController.swift */; };
+		C8567EC81ECB547E003EA7C7 /* BugsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8567EC71ECB547E003EA7C7 /* BugsViewController.swift */; };
 		C8567ECB1ECB547E003EA7C7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C8567EC91ECB547E003EA7C7 /* Main.storyboard */; };
 		C8567ECD1ECB547E003EA7C7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C8567ECC1ECB547E003EA7C7 /* Assets.xcassets */; };
 		C8567ED01ECB547E003EA7C7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C8567ECE1ECB547E003EA7C7 /* LaunchScreen.storyboard */; };
@@ -37,12 +37,13 @@
 		C8567F081ECB54DA003EA7C7 /* stagBeetle.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C8567EEE1ECB54DA003EA7C7 /* stagBeetle.jpg */; };
 		C8567F091ECB54DA003EA7C7 /* stinkbug.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C8567EEF1ECB54DA003EA7C7 /* stinkbug.jpg */; };
 		C8567F0A1ECB54DA003EA7C7 /* wolfSpider.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C8567EF01ECB54DA003EA7C7 /* wolfSpider.jpg */; };
+		C8567F0F1ECB6CA4003EA7C7 /* BugSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8567F0E1ECB6CA4003EA7C7 /* BugSection.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		C8567EC21ECB547E003EA7C7 /* BugsAlbum.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BugsAlbum.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8567EC51ECB547E003EA7C7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C8567EC71ECB547E003EA7C7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C8567EC71ECB547E003EA7C7 /* BugsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BugsViewController.swift; sourceTree = "<group>"; };
 		C8567ECA1ECB547E003EA7C7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C8567ECC1ECB547E003EA7C7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C8567ECF1ECB547E003EA7C7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -72,6 +73,7 @@
 		C8567EEE1ECB54DA003EA7C7 /* stagBeetle.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = stagBeetle.jpg; sourceTree = "<group>"; };
 		C8567EEF1ECB54DA003EA7C7 /* stinkbug.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = stinkbug.jpg; sourceTree = "<group>"; };
 		C8567EF01ECB54DA003EA7C7 /* wolfSpider.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = wolfSpider.jpg; sourceTree = "<group>"; };
+		C8567F0E1ECB6CA4003EA7C7 /* BugSection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BugSection.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,8 +108,9 @@
 			isa = PBXGroup;
 			children = (
 				C8567EC51ECB547E003EA7C7 /* AppDelegate.swift */,
-				C8567EC71ECB547E003EA7C7 /* ViewController.swift */,
+				C8567EC71ECB547E003EA7C7 /* BugsViewController.swift */,
 				C8567EE91ECB54DA003EA7C7 /* ScaryBug.swift */,
+				C8567F0E1ECB6CA4003EA7C7 /* BugSection.swift */,
 				C8567EC91ECB547E003EA7C7 /* Main.storyboard */,
 				C8567ECC1ECB547E003EA7C7 /* Assets.xcassets */,
 				C8567ECE1ECB547E003EA7C7 /* LaunchScreen.storyboard */,
@@ -244,8 +247,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C8567EC81ECB547E003EA7C7 /* ViewController.swift in Sources */,
+				C8567EC81ECB547E003EA7C7 /* BugsViewController.swift in Sources */,
 				C8567EC61ECB547E003EA7C7 /* AppDelegate.swift in Sources */,
+				C8567F0F1ECB6CA4003EA7C7 /* BugSection.swift in Sources */,
 				C8567F031ECB54DA003EA7C7 /* ScaryBug.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
