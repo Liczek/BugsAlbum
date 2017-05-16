@@ -1,0 +1,417 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C8567EC61ECB547E003EA7C7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8567EC51ECB547E003EA7C7 /* AppDelegate.swift */; };
+		C8567EC81ECB547E003EA7C7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8567EC71ECB547E003EA7C7 /* ViewController.swift */; };
+		C8567ECB1ECB547E003EA7C7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C8567EC91ECB547E003EA7C7 /* Main.storyboard */; };
+		C8567ECD1ECB547E003EA7C7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C8567ECC1ECB547E003EA7C7 /* Assets.xcassets */; };
+		C8567ED01ECB547E003EA7C7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C8567ECE1ECB547E003EA7C7 /* LaunchScreen.storyboard */; };
+		C8567EF21ECB54DA003EA7C7 /* bee.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C8567ED81ECB54DA003EA7C7 /* bee.jpg */; };
+		C8567EF31ECB54DA003EA7C7 /* beetle.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C8567ED91ECB54DA003EA7C7 /* beetle.jpg */; };
+		C8567EF41ECB54DA003EA7C7 /* burritoInsect.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C8567EDA1ECB54DA003EA7C7 /* burritoInsect.jpg */; };
+		C8567EF51ECB54DA003EA7C7 /* caterpillar.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C8567EDB1ECB54DA003EA7C7 /* caterpillar.jpg */; };
+		C8567EF61ECB54DA003EA7C7 /* centipede.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C8567EDC1ECB54DA003EA7C7 /* centipede.jpg */; };
+		C8567EF71ECB54DA003EA7C7 /* cicada.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C8567EDD1ECB54DA003EA7C7 /* cicada.jpg */; };
+		C8567EF81ECB54DA003EA7C7 /* cockroach.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C8567EDE1ECB54DA003EA7C7 /* cockroach.jpg */; };
+		C8567EF91ECB54DA003EA7C7 /* exoskeleton.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C8567EDF1ECB54DA003EA7C7 /* exoskeleton.jpg */; };
+		C8567EFA1ECB54DA003EA7C7 /* fly.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C8567EE01ECB54DA003EA7C7 /* fly.jpg */; };
+		C8567EFB1ECB54DA003EA7C7 /* giantMoth.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C8567EE11ECB54DA003EA7C7 /* giantMoth.jpg */; };
+		C8567EFC1ECB54DA003EA7C7 /* grasshopper.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C8567EE21ECB54DA003EA7C7 /* grasshopper.jpg */; };
+		C8567EFD1ECB54DA003EA7C7 /* ladybug.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C8567EE31ECB54DA003EA7C7 /* ladybug.jpg */; };
+		C8567EFE1ECB54DA003EA7C7 /* mosquito.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C8567EE41ECB54DA003EA7C7 /* mosquito.jpg */; };
+		C8567EFF1ECB54DA003EA7C7 /* potatoBug.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C8567EE51ECB54DA003EA7C7 /* potatoBug.jpg */; };
+		C8567F001ECB54DA003EA7C7 /* prayingMantis.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C8567EE61ECB54DA003EA7C7 /* prayingMantis.jpg */; };
+		C8567F011ECB54DA003EA7C7 /* roach.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C8567EE71ECB54DA003EA7C7 /* roach.jpg */; };
+		C8567F021ECB54DA003EA7C7 /* robberFly.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C8567EE81ECB54DA003EA7C7 /* robberFly.jpg */; };
+		C8567F031ECB54DA003EA7C7 /* ScaryBug.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8567EE91ECB54DA003EA7C7 /* ScaryBug.swift */; };
+		C8567F041ECB54DA003EA7C7 /* scorpion.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C8567EEA1ECB54DA003EA7C7 /* scorpion.jpg */; };
+		C8567F051ECB54DA003EA7C7 /* shieldBug.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C8567EEB1ECB54DA003EA7C7 /* shieldBug.jpg */; };
+		C8567F061ECB54DA003EA7C7 /* shockedface2_empty.png in Resources */ = {isa = PBXBuildFile; fileRef = C8567EEC1ECB54DA003EA7C7 /* shockedface2_empty.png */; };
+		C8567F071ECB54DA003EA7C7 /* shockedface2_full.png in Resources */ = {isa = PBXBuildFile; fileRef = C8567EED1ECB54DA003EA7C7 /* shockedface2_full.png */; };
+		C8567F081ECB54DA003EA7C7 /* stagBeetle.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C8567EEE1ECB54DA003EA7C7 /* stagBeetle.jpg */; };
+		C8567F091ECB54DA003EA7C7 /* stinkbug.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C8567EEF1ECB54DA003EA7C7 /* stinkbug.jpg */; };
+		C8567F0A1ECB54DA003EA7C7 /* wolfSpider.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C8567EF01ECB54DA003EA7C7 /* wolfSpider.jpg */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		C8567EC21ECB547E003EA7C7 /* BugsAlbum.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BugsAlbum.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C8567EC51ECB547E003EA7C7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C8567EC71ECB547E003EA7C7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C8567ECA1ECB547E003EA7C7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C8567ECC1ECB547E003EA7C7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C8567ECF1ECB547E003EA7C7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C8567ED11ECB547E003EA7C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C8567ED81ECB54DA003EA7C7 /* bee.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bee.jpg; sourceTree = "<group>"; };
+		C8567ED91ECB54DA003EA7C7 /* beetle.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = beetle.jpg; sourceTree = "<group>"; };
+		C8567EDA1ECB54DA003EA7C7 /* burritoInsect.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = burritoInsect.jpg; sourceTree = "<group>"; };
+		C8567EDB1ECB54DA003EA7C7 /* caterpillar.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = caterpillar.jpg; sourceTree = "<group>"; };
+		C8567EDC1ECB54DA003EA7C7 /* centipede.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = centipede.jpg; sourceTree = "<group>"; };
+		C8567EDD1ECB54DA003EA7C7 /* cicada.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = cicada.jpg; sourceTree = "<group>"; };
+		C8567EDE1ECB54DA003EA7C7 /* cockroach.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = cockroach.jpg; sourceTree = "<group>"; };
+		C8567EDF1ECB54DA003EA7C7 /* exoskeleton.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = exoskeleton.jpg; sourceTree = "<group>"; };
+		C8567EE01ECB54DA003EA7C7 /* fly.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = fly.jpg; sourceTree = "<group>"; };
+		C8567EE11ECB54DA003EA7C7 /* giantMoth.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = giantMoth.jpg; sourceTree = "<group>"; };
+		C8567EE21ECB54DA003EA7C7 /* grasshopper.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = grasshopper.jpg; sourceTree = "<group>"; };
+		C8567EE31ECB54DA003EA7C7 /* ladybug.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ladybug.jpg; sourceTree = "<group>"; };
+		C8567EE41ECB54DA003EA7C7 /* mosquito.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = mosquito.jpg; sourceTree = "<group>"; };
+		C8567EE51ECB54DA003EA7C7 /* potatoBug.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = potatoBug.jpg; sourceTree = "<group>"; };
+		C8567EE61ECB54DA003EA7C7 /* prayingMantis.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = prayingMantis.jpg; sourceTree = "<group>"; };
+		C8567EE71ECB54DA003EA7C7 /* roach.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = roach.jpg; sourceTree = "<group>"; };
+		C8567EE81ECB54DA003EA7C7 /* robberFly.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = robberFly.jpg; sourceTree = "<group>"; };
+		C8567EE91ECB54DA003EA7C7 /* ScaryBug.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ScaryBug.swift; path = ../ScaryBug.swift; sourceTree = "<group>"; };
+		C8567EEA1ECB54DA003EA7C7 /* scorpion.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = scorpion.jpg; sourceTree = "<group>"; };
+		C8567EEB1ECB54DA003EA7C7 /* shieldBug.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = shieldBug.jpg; sourceTree = "<group>"; };
+		C8567EEC1ECB54DA003EA7C7 /* shockedface2_empty.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = shockedface2_empty.png; sourceTree = "<group>"; };
+		C8567EED1ECB54DA003EA7C7 /* shockedface2_full.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = shockedface2_full.png; sourceTree = "<group>"; };
+		C8567EEE1ECB54DA003EA7C7 /* stagBeetle.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = stagBeetle.jpg; sourceTree = "<group>"; };
+		C8567EEF1ECB54DA003EA7C7 /* stinkbug.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = stinkbug.jpg; sourceTree = "<group>"; };
+		C8567EF01ECB54DA003EA7C7 /* wolfSpider.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = wolfSpider.jpg; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C8567EBF1ECB547E003EA7C7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C8567EB91ECB547E003EA7C7 = {
+			isa = PBXGroup;
+			children = (
+				C8567F0B1ECB54F9003EA7C7 /* Bugs */,
+				C8567EC41ECB547E003EA7C7 /* BugsAlbum */,
+				C8567EC31ECB547E003EA7C7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C8567EC31ECB547E003EA7C7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C8567EC21ECB547E003EA7C7 /* BugsAlbum.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C8567EC41ECB547E003EA7C7 /* BugsAlbum */ = {
+			isa = PBXGroup;
+			children = (
+				C8567EC51ECB547E003EA7C7 /* AppDelegate.swift */,
+				C8567EC71ECB547E003EA7C7 /* ViewController.swift */,
+				C8567EE91ECB54DA003EA7C7 /* ScaryBug.swift */,
+				C8567EC91ECB547E003EA7C7 /* Main.storyboard */,
+				C8567ECC1ECB547E003EA7C7 /* Assets.xcassets */,
+				C8567ECE1ECB547E003EA7C7 /* LaunchScreen.storyboard */,
+				C8567ED11ECB547E003EA7C7 /* Info.plist */,
+			);
+			path = BugsAlbum;
+			sourceTree = "<group>";
+		};
+		C8567F0B1ECB54F9003EA7C7 /* Bugs */ = {
+			isa = PBXGroup;
+			children = (
+				C8567ED81ECB54DA003EA7C7 /* bee.jpg */,
+				C8567ED91ECB54DA003EA7C7 /* beetle.jpg */,
+				C8567EDA1ECB54DA003EA7C7 /* burritoInsect.jpg */,
+				C8567EDB1ECB54DA003EA7C7 /* caterpillar.jpg */,
+				C8567EDC1ECB54DA003EA7C7 /* centipede.jpg */,
+				C8567EDD1ECB54DA003EA7C7 /* cicada.jpg */,
+				C8567EDE1ECB54DA003EA7C7 /* cockroach.jpg */,
+				C8567EDF1ECB54DA003EA7C7 /* exoskeleton.jpg */,
+				C8567EE01ECB54DA003EA7C7 /* fly.jpg */,
+				C8567EE11ECB54DA003EA7C7 /* giantMoth.jpg */,
+				C8567EE21ECB54DA003EA7C7 /* grasshopper.jpg */,
+				C8567EE31ECB54DA003EA7C7 /* ladybug.jpg */,
+				C8567EE41ECB54DA003EA7C7 /* mosquito.jpg */,
+				C8567EE51ECB54DA003EA7C7 /* potatoBug.jpg */,
+				C8567EE61ECB54DA003EA7C7 /* prayingMantis.jpg */,
+				C8567EE71ECB54DA003EA7C7 /* roach.jpg */,
+				C8567EE81ECB54DA003EA7C7 /* robberFly.jpg */,
+				C8567EEA1ECB54DA003EA7C7 /* scorpion.jpg */,
+				C8567EEB1ECB54DA003EA7C7 /* shieldBug.jpg */,
+				C8567EEC1ECB54DA003EA7C7 /* shockedface2_empty.png */,
+				C8567EED1ECB54DA003EA7C7 /* shockedface2_full.png */,
+				C8567EEE1ECB54DA003EA7C7 /* stagBeetle.jpg */,
+				C8567EEF1ECB54DA003EA7C7 /* stinkbug.jpg */,
+				C8567EF01ECB54DA003EA7C7 /* wolfSpider.jpg */,
+			);
+			name = Bugs;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C8567EC11ECB547E003EA7C7 /* BugsAlbum */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C8567ED41ECB547E003EA7C7 /* Build configuration list for PBXNativeTarget "BugsAlbum" */;
+			buildPhases = (
+				C8567EBE1ECB547E003EA7C7 /* Sources */,
+				C8567EBF1ECB547E003EA7C7 /* Frameworks */,
+				C8567EC01ECB547E003EA7C7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BugsAlbum;
+			productName = BugsAlbum;
+			productReference = C8567EC21ECB547E003EA7C7 /* BugsAlbum.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C8567EBA1ECB547E003EA7C7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Paweł Liczmański";
+				TargetAttributes = {
+					C8567EC11ECB547E003EA7C7 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = DBAJNSTG63;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = C8567EBD1ECB547E003EA7C7 /* Build configuration list for PBXProject "BugsAlbum" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C8567EB91ECB547E003EA7C7;
+			productRefGroup = C8567EC31ECB547E003EA7C7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C8567EC11ECB547E003EA7C7 /* BugsAlbum */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C8567EC01ECB547E003EA7C7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C8567F051ECB54DA003EA7C7 /* shieldBug.jpg in Resources */,
+				C8567F061ECB54DA003EA7C7 /* shockedface2_empty.png in Resources */,
+				C8567ED01ECB547E003EA7C7 /* LaunchScreen.storyboard in Resources */,
+				C8567EFC1ECB54DA003EA7C7 /* grasshopper.jpg in Resources */,
+				C8567EFD1ECB54DA003EA7C7 /* ladybug.jpg in Resources */,
+				C8567EF51ECB54DA003EA7C7 /* caterpillar.jpg in Resources */,
+				C8567F041ECB54DA003EA7C7 /* scorpion.jpg in Resources */,
+				C8567F021ECB54DA003EA7C7 /* robberFly.jpg in Resources */,
+				C8567EF21ECB54DA003EA7C7 /* bee.jpg in Resources */,
+				C8567EF31ECB54DA003EA7C7 /* beetle.jpg in Resources */,
+				C8567ECD1ECB547E003EA7C7 /* Assets.xcassets in Resources */,
+				C8567F071ECB54DA003EA7C7 /* shockedface2_full.png in Resources */,
+				C8567EF61ECB54DA003EA7C7 /* centipede.jpg in Resources */,
+				C8567F011ECB54DA003EA7C7 /* roach.jpg in Resources */,
+				C8567F091ECB54DA003EA7C7 /* stinkbug.jpg in Resources */,
+				C8567EF91ECB54DA003EA7C7 /* exoskeleton.jpg in Resources */,
+				C8567EFE1ECB54DA003EA7C7 /* mosquito.jpg in Resources */,
+				C8567F001ECB54DA003EA7C7 /* prayingMantis.jpg in Resources */,
+				C8567EF41ECB54DA003EA7C7 /* burritoInsect.jpg in Resources */,
+				C8567F0A1ECB54DA003EA7C7 /* wolfSpider.jpg in Resources */,
+				C8567EF81ECB54DA003EA7C7 /* cockroach.jpg in Resources */,
+				C8567EF71ECB54DA003EA7C7 /* cicada.jpg in Resources */,
+				C8567EFB1ECB54DA003EA7C7 /* giantMoth.jpg in Resources */,
+				C8567EFA1ECB54DA003EA7C7 /* fly.jpg in Resources */,
+				C8567ECB1ECB547E003EA7C7 /* Main.storyboard in Resources */,
+				C8567EFF1ECB54DA003EA7C7 /* potatoBug.jpg in Resources */,
+				C8567F081ECB54DA003EA7C7 /* stagBeetle.jpg in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C8567EBE1ECB547E003EA7C7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C8567EC81ECB547E003EA7C7 /* ViewController.swift in Sources */,
+				C8567EC61ECB547E003EA7C7 /* AppDelegate.swift in Sources */,
+				C8567F031ECB54DA003EA7C7 /* ScaryBug.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		C8567EC91ECB547E003EA7C7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C8567ECA1ECB547E003EA7C7 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C8567ECE1ECB547E003EA7C7 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C8567ECF1ECB547E003EA7C7 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C8567ED21ECB547E003EA7C7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C8567ED31ECB547E003EA7C7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C8567ED51ECB547E003EA7C7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = DBAJNSTG63;
+				INFOPLIST_FILE = BugsAlbum/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.pawelliczmanski.BugsAlbum;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		C8567ED61ECB547E003EA7C7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = DBAJNSTG63;
+				INFOPLIST_FILE = BugsAlbum/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.pawelliczmanski.BugsAlbum;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C8567EBD1ECB547E003EA7C7 /* Build configuration list for PBXProject "BugsAlbum" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C8567ED21ECB547E003EA7C7 /* Debug */,
+				C8567ED31ECB547E003EA7C7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C8567ED41ECB547E003EA7C7 /* Build configuration list for PBXNativeTarget "BugsAlbum" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C8567ED51ECB547E003EA7C7 /* Debug */,
+				C8567ED61ECB547E003EA7C7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C8567EBA1ECB547E003EA7C7 /* Project object */;
+}
