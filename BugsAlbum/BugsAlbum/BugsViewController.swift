@@ -15,6 +15,9 @@ class BugsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        tableView.delegate = self
+        
+        tableView.allowsSelectionDuringEditing = true
         
         navigationItem.rightBarButtonItem = editButtonItem
         
@@ -49,8 +52,21 @@ extension BugsViewController: UITableViewDataSource {
     override func setEditing(_ editing: Bool, animated: Bool) {
         super.setEditing(editing, animated: animated)
         if editing {
-           tableView.setEditing(true, animated: true)
+            
+            tableView.beginUpdates()
+            for (index, bugSection) in bugSections.enumerated() {
+                let indexPath = IndexPath(row: bugSection.bugs.count, section: index)
+                tableView.insertRows(at: [indexPath], with: .automatic)
+            }
+            tableView.endUpdates()
+            tableView.setEditing(true, animated: true)
         } else {
+            tableView.beginUpdates()
+            for (index, bugSection) in bugSections.enumerated() {
+                let indexPath = IndexPath(row: bugSection.bugs.count, section: index)
+                tableView.deleteRows(at: [indexPath], with: .automatic)
+            }
+            tableView.endUpdates()
             tableView.setEditing(false, animated: true)
         }
     }
@@ -60,6 +76,11 @@ extension BugsViewController: UITableViewDataSource {
             let bugSection = bugSections[indexPath.section]
             bugSection.bugs.remove(at: indexPath.row)
             tableView.deleteRows(at: [indexPath], with: .automatic)
+        } else if editingStyle == .insert {
+            let bugSection = bugSections[indexPath.section]
+            let newBug = ScaryBug(withName: "New Kind", imageName: nil, howScary: bugSection.howScary)
+            bugSection.bugs.append(newBug)
+            tableView.insertRows(at: [indexPath], with: .automatic)
         }
     }
     
@@ -74,21 +95,57 @@ extension BugsViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         let bugSection = bugSections[section]
-        return bugSection.bugs.count
+        let adjustment = isEditing ? 1 : 0
+        return bugSection.bugs.count + adjustment
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "BugsCell", for: indexPath)
         let bugSection = bugSections[indexPath.section]
         let bugs = bugSection.bugs
-        let bug = bugs[indexPath.row]
         
-        cell.textLabel?.text = bug.name
-        cell.detailTextLabel?.text = ScaryBug.scaryFactorToString(scaryFactor: bug.howScary)
-        if let bugImage = bug.image {
-            cell.imageView?.image = bugImage
+        if indexPath.row >= bugs.count && isEditing {
+            cell.textLabel?.text = "New Kind Of Bug"
+            cell.detailTextLabel?.text = nil
+            cell.imageView?.image = nil
+            
+        } else {
+            let bug = bugs[indexPath.row]
+            cell.textLabel?.text = bug.name
+            cell.detailTextLabel?.text = ScaryBug.scaryFactorToString(scaryFactor: bug.howScary)
+            if let bugImage = bug.image {
+                cell.imageView?.image = bugImage
+            } else {
+                cell.imageView?.image = nil
+            }
         }
         
         return cell
+    }
+}
+
+extension BugsViewController: UITableViewDelegate {
+    
+    func tableView(_ tableView: UITableView, editingStyleForRowAt indexPath: IndexPath) -> UITableViewCellEditingStyle {
+        let bugSection = bugSections[indexPath.section]
+        if indexPath.row >= bugSection.bugs.count && isEditing{
+            return .insert
+        } else {
+            return .delete
+        }
+    }
+    
+    func tableView(_ tableView: UITableView, willSelectRowAt indexPath: IndexPath) -> IndexPath? {
+        let bugSection = bugSections[indexPath.section]
+        if isEditing && indexPath.row < bugSection.bugs.count {
+            return nil
+        } else {
+            return indexPath
+        }
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+        self.tableView(tableView, commit: .insert, forRowAt: indexPath)
     }
 }
