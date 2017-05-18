@@ -47,6 +47,8 @@ class BugsViewController: UIViewController {
     }
 }
 
+//MARK: Table View DATA SOURCE
+
 extension BugsViewController: UITableViewDataSource {
     
     override func setEditing(_ editing: Bool, animated: Bool) {
@@ -119,10 +121,11 @@ extension BugsViewController: UITableViewDataSource {
                 cell.imageView?.image = nil
             }
         }
-        
         return cell
     }
 }
+
+//MARK: TableView DELEGATE
 
 extension BugsViewController: UITableViewDelegate {
     
@@ -146,6 +149,47 @@ extension BugsViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
-        self.tableView(tableView, commit: .insert, forRowAt: indexPath)
+        if isEditing{
+            self.tableView(tableView, commit: .insert, forRowAt: indexPath)
+        }
+    }
+    
+    func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexPath) -> Bool {
+        let bugSection = bugSections[indexPath.section]
+        if indexPath.row >= bugSection.bugs.count {
+            return false
+        } else {
+            return true
+        }
+    }
+    
+    func tableView(_ tableView: UITableView, moveRowAt sourceIndexPath: IndexPath, to destinationIndexPath: IndexPath) {
+        let sourceBugSection = bugSections[sourceIndexPath.section]
+        let destinationBugSection = bugSections[destinationIndexPath.section]
+        let bugToMove = sourceBugSection.bugs[sourceIndexPath.row]
+        
+        if destinationBugSection == sourceBugSection {
+            if destinationIndexPath.row != sourceIndexPath.row {
+                swap(&destinationBugSection.bugs[destinationIndexPath.row], &sourceBugSection.bugs[sourceIndexPath.row])
+            }
+        } else {
+            bugToMove.howScary = destinationBugSection.howScary
+            print(bugToMove.howScary)
+            destinationBugSection.bugs.insert(bugToMove, at: destinationIndexPath.row)
+            sourceBugSection.bugs.remove(at: sourceIndexPath.row)
+        }
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
