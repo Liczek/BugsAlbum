@@ -178,6 +178,14 @@ extension BugsViewController: UITableViewDelegate {
             destinationBugSection.bugs.insert(bugToMove, at: destinationIndexPath.row)
             sourceBugSection.bugs.remove(at: sourceIndexPath.row)
         }
+        
+        
+        UIView.animate(withDuration: 0.3, animations: {
+        }) { (isComplete) in
+            let cell = tableView.cellForRow(at: destinationIndexPath)
+            cell?.detailTextLabel?.text = ScaryBug.scaryFactorToString(scaryFactor: bugToMove.howScary)
+        }
+        
     }
 }
 
